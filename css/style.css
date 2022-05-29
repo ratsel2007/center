@@ -1067,6 +1067,7 @@ body::after {
 
 .spoller-courses__item {
   background: #ffffff;
+  border: 0.5px solid #ff90a7;
   cursor: pointer;
 }
 
@@ -2207,6 +2208,10 @@ body::after {
   }
 }
 
+.thanks-popup__title:not(:last-child) {
+  margin-bottom: 15px;
+}
+
 .thanks-popup__text {
   line-height: 1.5;
   text-align: center;
@@ -2977,6 +2982,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
+@media (max-width: 45em) {
+  .spoller-courses {
+    max-width: calc(100% - 10px);
+  }
+}
+
 @media (max-width: 36em) {
   .gallery__wrapper {
     padding: 0;
@@ -3265,6 +3276,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .popup-data__wrapper:not(:last-child) {
     margin: 0 0 15px 0;
+  }
+
+  .thanks-popup__body {
+    padding: 20px;
   }
 }
 
